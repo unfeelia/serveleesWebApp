@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	form(name='test', method='post', id='signUpForm')
+		p
+			div(class='inputFieldText nav-text')
+				p name
+			input(type='text', id='signUpName', required, oninvalid='')
+			div(class='inputFieldErrorMessage')
+		p 
+			div(class='inputFieldText nav-text')
+				p your password
+			input(type='password', id='signUpPassword')
+			div(class='inputFieldErrorMessage')
+		p 
+			div(class='inputFieldText nav-text') 
+				p repeat password
+			input(type='password', id='signUpRepeatPassword')
+			div(class='inputFieldErrorMessage')
+		p
+			input(type='submit', value='send')
+	script(src="/dev/javaScripts/validatingInputFields.js")
+	script(src="/dev/javaScripts/signUpHandler.js")

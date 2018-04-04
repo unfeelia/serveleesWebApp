@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	div(class = 'nav-text')
+		p POST /api/auth/signin
+		p PUT /api/auth/signup
+		
+		p PUT /api/users/:id
+		p POST /api/users/:id
+		p DELETE /api/users/:id
+		p GET /api/users/:id
+		
+		p PUT /api/pokergame/
+		p POST /api/pokergame/:id
+		p DELETE /api/pokergame/:id
+		p GET /api/pokergame/:id
+		p POST /api/pokergame/:id/leave
+		p POST /api/pokergame/:id/join
+		p POST /api/pokergame/:id/bet
+		p POST /api/pokergame/:id/fold
+		p POST /api/pokergame/:id/check
+		p POST /api/pokergame/:id/start
+		
+		p GET /api/pokergames/

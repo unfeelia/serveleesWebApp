@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	form(name='test', method='post', id='signInForm')
+		p
+			div(class='inputFieldText nav-text')
+				p name
+			input(type='text', id='signInName', required, oninvalid='')
+			div(class='inputFieldErrorMessage')
+		p 
+			div(class='inputFieldText nav-text') 
+				p your password
+			input(type='password', id='signInPassword')
+			div(class='inputFieldErrorMessage')
+		p
+			input(type='submit', value='send')
+	script(src="javaScripts/validatingInputFields.js")
+	script(src="javaScripts/signInHandler.js")

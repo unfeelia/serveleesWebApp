@@ -1,0 +1,209 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  overflow: hidden;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body, html {
+   min-height: 100%;
+   height: 100%;
+}
+
+.table-hover > tbody > tr:hover {
+	border: 1px solid white;
+	border-bottom: none;
+	background-color: rgb(30, 30, 30);
+}
+
+.table > thead > tr > th{
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+}
+
+.table > tbody > tr > td {
+	border: none;
+	border-top: 1px solid grey;
+}
+
+.completed {
+	background-color: rgba(80, 80, 80, 0.5);
+}
+
+.completed > td {
+	color: silver;
+}
+
+.center-form{
+	padding: 2rem;
+	position: absolute;
+	top: 10% !important;
+	left: 33% !important;
+	right: 33% !important;
+}
+
+.rightPad{
+	padding-right: 1rem;
+}
+
+.hidden{
+	display: none !important;
+}
+
+.mylink{
+	color: white;
+	cursor: pointer;
+}
+
+.mylink:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.smallmar{
+	margin: 1rem !important;
+}
+
+.blanklist{
+	list-style-type: none;
+}
+
+.h-70{
+	height: 70%;
+}
+
+.h-30{
+	height: 30% !important;
+}
+
+.w-70{
+	width:70%
+}
+
+.w-30{
+	width: 30%;
+}
+
+.greyBrd{
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey
+}
+
+.nopad
+{
+	padding: 0rem !important;
+}
+
+.nomar{
+	margin: 0rem !important;
+}
+
+#userspanel{
+	position: absolute;
+	top: 0;
+	bottom: 70%;
+	left: 0;
+	right: 70%;
+	z-index: 1;
+}
+
+.navbar{
+	z-index: 2;
+	border: 1px solid grey;
+}
+
+
+
+#projectpanel
+{
+	position: absolute;
+	top: 30%;
+	bottom: 5%;
+	left: 0;
+	right: 70%;
+}
+
+#taskpanel{
+	position: absolute;
+	top: 0%;
+	bottom: 5%;
+	left: 30%;
+	right: 0;
+}
+
+.my-btn-dark{
+	border: none;
+	background: none;
+	cursor:pointer;
+}
+
+.btn-dark{
+	border: 1px solid #666666 !important;
+}
+
+.my-btn-dark:focus {
+	box-shadow: none;
+}
+
+.fwo{
+	position: absolute;
+    overflow-y: scroll;
+}
+
+.leftPad{
+	padding-left: 1rem;
+}
+
+.jumbotron {
+	background-color: #323232 !important;
+	margin: 0rem !important;
+	overflow: auto;
+}
+
+.smallpad{
+	padding: 0.3rem;
+}
+
+.mediumpad{
+	padding: 1.5rem;
+}
+
+.settings-buttons{
+	padding: 0.5rem;
+}
+
+.h-100wnavb
+{
+	padding-top: 0.5rem;
+	height: 90%;
+}
+
+.greyText{
+	color: lightGrey;
+}
+
+.border-grey{
+	border: 2px solid grey;
+}
+
+.blueText{
+	color: lightBlue;
+}
+
+.greyBg {
+	background-color: #323232 !important;
+}
+
+.dropdown.show a { 
+	background-color: #505050;
+	color: white;
+}
+
+.dropdown-menu {
+	border: 1px solid grey !important;
+}
+
+.dropdown .dropdown-menu a:hover {
+	background-color: #505050 !important;
+}

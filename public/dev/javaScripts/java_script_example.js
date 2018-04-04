@@ -1,0 +1,4 @@
+asd.onclick = function()
+{
+	asd.
+}

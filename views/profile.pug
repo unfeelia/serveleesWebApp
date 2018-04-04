@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	h1= title
+	div(id = 'profileInfo', class = 'nav-text')
+			div(id = 'userNameField')
+			div(id = 'userEmailField')
+	div(id = 'changeName', class = 'nav-text')
+		p Set new Name:
+		form(id = 'resetNameForm')
+			p Name you would like to set
+			input(name = 'name')
+		input(id = 'changeNameSubmitButton', type = 'submit', value = 'Submit')
+	div(id = 'changeEmail', class = 'nav-text')
+		p Set new Email:
+		form(id = 'resetEmailForm')
+			p Email you would like to set
+			input(name = 'email')
+		input(id = 'changeEmailSubmitButton', type = 'submit', value = 'Submit')
+	div(id = 'changePassword', class = 'nav-text')
+		p Set new Password:
+		form(id = 'resetPasswordForm')
+			p Enter Your Current Password
+			input(type = 'password', name = 'oldPassword')
+			p Password you would like to set
+			input(type = 'password', name = 'newPassword')
+			p New Password Again
+			input(type = 'password')
+		input(id = 'changePasswordSubmitButton', type = 'submit', value = 'Submit')
+	div(id = 'notLogedMessage', class = 'nav-text nav-error')
+		p You are not loged in.
+		
+	<script src="/dev/javaScripts/jcanvas.min.js"></script>
+	script(src="/dev/javaScripts/profile.js")

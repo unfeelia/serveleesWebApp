@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+		title= title
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
+		script(src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js")
+		link(rel='stylesheet', href='/dev/stylesheets/style.css')
+	body
+		nav(class='navbar')
+			div(class='collapse navbar-collapse', id='collapsibleNavbar')
+				ul(class='navbar-nav mr-auto')
+					li(class='nav-item')
+						a(class='nav-link', href='/dev/') Main
+					li(class='nav-item nav-item-to-right')
+						a(id='profileButton', type='button', class='button  btn btn-secondary btn-dark text-white active', href='/dev/profile', aria-pressed='true') Profile
+					li(class='nav-item nav-item-to-right')
+						a(id='signInButton', type='button', class='button btn btn-secondary btn-dark text-white active', href='/dev/signin', aria-pressed='true') Sign In
+					li(class='nav-item nav-item-to-right')
+						a(id='signUpButton', type='button', class='button btn btn-secondary btn-dark text-white active', href='/dev/signup', aria-pressed='true') Sign Up
+					li(class='nav-item nav-item-to-right')
+						a(id='logOutButton', type='button', class='button btn btn-secondary btn-dark text-white active', href='', aria-pressed='true') Log Out
+		nav(class='navbar')
+			div(class='collapse navbar-collapse', id='collapsibleNavbar')
+				ul(class='navbar-nav')
+					li(class='nav-item')
+						a(class='nav-link', href='/dev/about/') About Us
+					li(class='nav-item')
+						a(class='nav-link', href='/dev/contacts') Contact us
+					li(class='nav-item')
+						a(class='nav-link', href='/dev/howtoplay/') How To Play
+					li(class='nav-item')
+						a(class='nav-link', href='/dev/api/') API
+					li(class='nav-item')
+						a(class='nav-link', href='/dev/pokergames/') Play Now
+		script(src='/dev/javaScripts/index.js')
+		block content

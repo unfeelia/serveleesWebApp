@@ -1,0 +1,19 @@
+table
+{
+	text-align:center;
+	border-collapse:collapse;
+	background-image: url("http://localhost/img/Eto.jpg");
+}
+td
+{
+	background-color: 0,0,0,0.5; /* Black */
+	border: 1px solid black;
+	color: white;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+}
+main
+{
+		display: flex;
+}

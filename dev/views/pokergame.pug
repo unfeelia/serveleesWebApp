@@ -1,0 +1,38 @@
+extends layout
+
+block content
+	ul(class='navbar-nav mr-auto pokermoves nav-text')
+		li(class='nav-item')
+			div
+				p Game ID:
+				p(id = 'gameId')= id
+		li(class='nav-item')
+			div
+				p Hoster ID:
+				p(id = 'hosterId')
+		li(class='nav-item')
+			div
+				p Hoster Name:
+				p(id = 'hosterName')
+		ul(class='navbar-nav mr-auto pokermoves', id = 'gamemovelist')
+			li(class='nav-item')
+				div(id = 'bet', class = 'gameMove')
+					form(id = 'makeBetForm')
+						input(type = 'text', name = 'bet')
+						input(id = 'makeBetButton', type = 'submit', value = 'Make Bet')
+			li(class='nav-item')
+				div(id = 'fold')
+					form(id = 'makeFoldForm', class = 'gameMove')
+						button(id = 'makeFoldButton', type = 'submit') Fold
+			li(class='nav-item')
+				div(id = 'check')
+					form(id = 'makeCheckForm', class = 'gameMove')
+						button(id = 'makeCheckButton', type = 'submit') Check
+			li(class='nav-item')
+				div(id = 'start', hidden = 'true')
+					form(id = 'startForm', class = 'gameMove')
+						button(id = 'startButton', type = 'submit') Start
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+	script(src="/dev/javaScripts/jcanvas.min.js")
+	script(src="/dev/javaScripts/pokerGame.js")
+	
